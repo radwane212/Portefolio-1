@@ -1,0 +1,152 @@
+/* Add your own styles here */
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, rgba(224, 241, 65, 0.8), rgba(127, 155, 2, 0.8));
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 70%;
+}
+
+.name {
+  margin-left: 20px;
+  color: #33d441;
+  font-size: 24px;
+  animation: moveInRight 1s forwards;
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+h2 {
+  color: #777;
+  font-size: 18px;
+  animation: moveInLeft 1s forwards;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Navigation */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #d1c625;
+}
+
+
+section h3 {
+  color: #052fb9;
+  font-size: 24px;
+  margin-bottom: 10px;
+  animation: fadeInAnimation 1s forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+section p {
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  animation: fadeInAnimation 1s forwards;
+}
+
+table th,
+table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #884d79;
+}
+
+#englishBtn,
+#francaisBtn {
+  padding: 10px 20px;
+  background-color: #ecf8a9;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeInAnimation 1s forwards;
+}
+
+#englishBtn:hover,
+#francaisBtn:hover {
+  background-color: #69ec35;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
